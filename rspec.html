@@ -286,30 +286,199 @@ a {
 </div>
 <div id="div_group_2" class="example_group passed">
   <dl style="margin-left: 15px;">
-  <dt id="example_group_2" class="passed">#parent=</dt>
+  <dt id="example_group_2" class="passed">#initialize</dt>
+    <script type="text/javascript">moveProgressBar('4.7');</script>
+    <dd class="example passed"><span class="passed_spec_name">should set an initial value</span><span class='duration'>0.00089s</span></dd>
+    <script type="text/javascript">moveProgressBar('9.5');</script>
+    <dd class="example passed"><span class="passed_spec_name">should set parent to nil</span><span class='duration'>0.00186s</span></dd>
     <script type="text/javascript">moveProgressBar('14.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">should set a node&#39;s parent to the passed node</span><span class='duration'>0.00060s</span></dd>
-    <script type="text/javascript">moveProgressBar('28.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">should add the child node to the passed node&#39;s children</span><span class='duration'>0.00060s</span></dd>
-    <script type="text/javascript">moveProgressBar('42.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">does not add the same node twice</span><span class='duration'>0.00007s</span></dd>
-    <script type="text/javascript">moveProgressBar('57.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">handles nil without issue</span><span class='duration'>0.00125s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should set children to an empty array</span><span class='duration'>0.00012s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
-  <dl style="margin-left: 30px;">
-  <dt id="example_group_3" class="passed">when reassigning</dt>
-    <script type="text/javascript">moveProgressBar('71.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">should set the node&#39;s parent to the new parent</span><span class='duration'>0.00008s</span></dd>
-    <script type="text/javascript">moveProgressBar('85.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">should add the node to the new parent&#39;s children</span><span class='duration'>0.00074s</span></dd>
-    <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should remove the node from its old parent&#39;s children</span><span class='duration'>0.00010s</span></dd>
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_3" class="passed">#parent=</dt>
+    <script type="text/javascript">moveProgressBar('19.0');</script>
+    <dd class="example passed"><span class="passed_spec_name">should set a node&#39;s parent to the passed node</span><span class='duration'>0.00068s</span></dd>
+    <script type="text/javascript">moveProgressBar('23.8');</script>
+    <dd class="example passed"><span class="passed_spec_name">should add the child node to the passed node&#39;s children</span><span class='duration'>0.00014s</span></dd>
+    <script type="text/javascript">moveProgressBar('28.5');</script>
+    <dd class="example passed"><span class="passed_spec_name">does not add the same node twice</span><span class='duration'>0.00009s</span></dd>
+    <script type="text/javascript">moveProgressBar('33.3');</script>
+    <dd class="example passed"><span class="passed_spec_name">handles nil without issue</span><span class='duration'>0.00008s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.00462 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "7 examples, 0 failures";</script>
+<div id="div_group_4" class="example_group passed">
+  <dl style="margin-left: 30px;">
+  <dt id="example_group_4" class="passed">when reassigning</dt>
+    <script type="text/javascript">moveProgressBar('38.0');</script>
+    <dd class="example passed"><span class="passed_spec_name">should set the node&#39;s parent to the new parent</span><span class='duration'>0.00011s</span></dd>
+    <script type="text/javascript">moveProgressBar('42.8');</script>
+    <dd class="example passed"><span class="passed_spec_name">should add the node to the new parent&#39;s children</span><span class='duration'>0.00080s</span></dd>
+    <script type="text/javascript">moveProgressBar('47.6');</script>
+    <dd class="example passed"><span class="passed_spec_name">should remove the node from its old parent&#39;s children</span><span class='duration'>0.00015s</span></dd>
+  </dl>
+</div>
+<div id="div_group_5" class="example_group passed">
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_5" class="passed">#add_child</dt>
+    <script type="text/javascript">moveProgressBar('52.3');</script>
+    <dd class="example passed"><span class="passed_spec_name">should pass itself to the child&#39;s #parent=</span><span class='duration'>0.00763s</span></dd>
+  </dl>
+</div>
+<div id="div_group_6" class="example_group passed">
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_6" class="passed">#remove_child</dt>
+    <script type="text/javascript">moveProgressBar('57.1');</script>
+    <dd class="example passed"><span class="passed_spec_name">should pass nil to the child&#39;s #parent=</span><span class='duration'>0.00027s</span></dd>
+    <script type="text/javascript">moveProgressBar('61.9');</script>
+    <dd class="example passed"><span class="passed_spec_name">should raise an error if node is not a child</span><span class='duration'>0.00100s</span></dd>
+  </dl>
+</div>
+<div id="div_group_7" class="example_group passed">
+  <dl style="margin-left: 0px;">
+  <dt id="example_group_7" class="passed">Searchable</dt>
+  </dl>
+</div>
+<div id="div_group_8" class="example_group passed">
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_8" class="passed">#dfs</dt>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('div_group_8');</script>
+    <script type="text/javascript">makeRed('example_group_8');</script>
+    <script type="text/javascript">moveProgressBar('66.6');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should take correct path to descendant</span>
+      <span class="duration">0.00128s</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>undefined method `dfs&#39; for #&lt;PolyTreeNode:0x007fa0cb0bf7c0&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:127:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">125</span>        expect(nodes[index]).to receive(<span class="symbol">:dfs</span>).and_call_original.ordered
+<span class="linenum">126</span>      <span class="keyword">end</span>
+<span class="offending"><span class="linenum">127</span>      expect(nodes.first.dfs(<span class="string"><span class="delimiter">'</span><span class="content">e</span><span class="delimiter">'</span></span>)).to equal(nodes[<span class="integer">4</span>])</span>
+<span class="linenum">128</span>    <span class="keyword">end</span>
+<span class="linenum">129</span>  <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div id="div_group_9" class="example_group passed">
+  <dl style="margin-left: 30px;">
+  <dt id="example_group_9" class="passed">behaves like search method</dt>
+    <script type="text/javascript">makeRed('div_group_9');</script>
+    <script type="text/javascript">makeRed('example_group_9');</script>
+    <script type="text/javascript">moveProgressBar('71.4');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should return itself if it contains the value</span>
+      <span class="duration">0.00016s</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>undefined method `dfs&#39; for #&lt;PolyTreeNode:0x007fa0cb125250&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:106:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">104</span>  shared_examples_for <span class="string"><span class="delimiter">'</span><span class="content">search method</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+<span class="linenum">105</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should return itself if it contains the value</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">106</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">a</span><span class="delimiter">'</span></span>)).to equal(nodes.first)</span>
+<span class="linenum">107</span>    <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('76.1');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should find descendant</span>
+      <span class="duration">0.00017s</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>undefined method `dfs&#39; for #&lt;PolyTreeNode:0x007fa0cb0de328&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:110:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">108</span>
+<span class="linenum">109</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should find descendant</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">110</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">g</span><span class="delimiter">'</span></span>)).to equal(nodes[<span class="integer">6</span>])</span>
+<span class="linenum">111</span>    <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('80.9');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should return nil when value is not found</span>
+      <span class="duration">0.00015s</span>
+      <div class="failure" id="failure_4">
+        <div class="message"><pre>undefined method `dfs&#39; for #&lt;PolyTreeNode:0x007fa0c9a65858&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:114:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">112</span>
+<span class="linenum">113</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should return nil when value is not found</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">114</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">x</span><span class="delimiter">'</span></span>)).to be_nil</span>
+<span class="linenum">115</span>    <span class="keyword">end</span>
+<span class="linenum">116</span>  <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div id="div_group_10" class="example_group passed">
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_10" class="passed">#bfs</dt>
+    <script type="text/javascript">makeRed('div_group_10');</script>
+    <script type="text/javascript">makeRed('example_group_10');</script>
+    <script type="text/javascript">moveProgressBar('85.7');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should take correct path to descendant</span>
+      <span class="duration">0.00094s</span>
+      <div class="failure" id="failure_5">
+        <div class="message"><pre>undefined method `bfs&#39; for #&lt;PolyTreeNode:0x007fa0c99a5828&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:140:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">138</span>        expect(nodes[index]).to receive(<span class="symbol">:value</span>).and_call_original.ordered
+<span class="linenum">139</span>      <span class="keyword">end</span>
+<span class="offending"><span class="linenum">140</span>      expect(nodes.first.bfs(<span class="string"><span class="delimiter">'</span><span class="content">f</span><span class="delimiter">'</span></span>)).to equal(nodes[<span class="integer">5</span>])</span>
+<span class="linenum">141</span>    <span class="keyword">end</span>
+<span class="linenum">142</span>  <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div id="div_group_11" class="example_group passed">
+  <dl style="margin-left: 30px;">
+  <dt id="example_group_11" class="passed">behaves like search method</dt>
+    <script type="text/javascript">makeRed('div_group_11');</script>
+    <script type="text/javascript">makeRed('example_group_11');</script>
+    <script type="text/javascript">moveProgressBar('90.4');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should return itself if it contains the value</span>
+      <span class="duration">0.00015s</span>
+      <div class="failure" id="failure_6">
+        <div class="message"><pre>undefined method `bfs&#39; for #&lt;PolyTreeNode:0x007fa0c98985e8&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:106:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">104</span>  shared_examples_for <span class="string"><span class="delimiter">'</span><span class="content">search method</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+<span class="linenum">105</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should return itself if it contains the value</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">106</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">a</span><span class="delimiter">'</span></span>)).to equal(nodes.first)</span>
+<span class="linenum">107</span>    <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('95.2');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should find descendant</span>
+      <span class="duration">0.00027s</span>
+      <div class="failure" id="failure_7">
+        <div class="message"><pre>undefined method `bfs&#39; for #&lt;PolyTreeNode:0x007fa0cb284560&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:110:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">108</span>
+<span class="linenum">109</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should find descendant</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">110</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">g</span><span class="delimiter">'</span></span>)).to equal(nodes[<span class="integer">6</span>])</span>
+<span class="linenum">111</span>    <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('100.0');</script>
+    <dd class="example failed">
+      <span class="failed_spec_name">should return nil when value is not found</span>
+      <span class="duration">0.00016s</span>
+      <div class="failure" id="failure_8">
+        <div class="message"><pre>undefined method `bfs&#39; for #&lt;PolyTreeNode:0x007fa0cb22fc90&gt;</pre></div>
+        <div class="backtrace"><pre>./00_tree_node_spec.rb:114:in `block (3 levels) in &lt;top (required)&gt;&#39;</pre></div>
+    <pre class="ruby"><code><span class="linenum">112</span>
+<span class="linenum">113</span>    it <span class="string"><span class="delimiter">&quot;</span><span class="content">should return nil when value is not found</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">114</span>      expect(nodes.first.send(search_method, <span class="string"><span class="delimiter">'</span><span class="content">x</span><span class="delimiter">'</span></span>)).to be_nil</span>
+<span class="linenum">115</span>    <span class="keyword">end</span>
+<span class="linenum">116</span>  <span class="keyword">end</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.07064 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "21 examples, 8 failures";</script>
 </div>
 </div>
 </body>
