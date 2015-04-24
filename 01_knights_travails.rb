@@ -6,7 +6,6 @@ class KnightPathFinder
   def initialize(starting_pos = [0, 0])
     @starting_pos = PolyTreeNode.new(starting_pos)
     @visited_poss = [starting_pos]
-
   end
 
   def self.valid_moves(pos)
@@ -19,7 +18,6 @@ class KnightPathFinder
       (0..7).include?(new_pos.first) &&
         (0..7).include?(new_pos.last)
     end
-
   end
 
   def build_move_tree
@@ -55,24 +53,4 @@ class KnightPathFinder
     end
     path
   end
-
-  # def dfs(target_value)
-  #   return self if value == target_value
-  #   children.each do |child|
-  #     child_search_result = child.dfs(target_value)
-  #     return child_search_result if child_search_result
-  #   end
-  #
-  #   nil
-  # end
-
 end
-
-# Basic testing
-
-
-kpf = KnightPathFinder.new([0, 0])
-
-kpf.build_move_tree
-
-p kpf.find_path([6,2])
