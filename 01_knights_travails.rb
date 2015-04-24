@@ -40,6 +40,32 @@ class KnightPathFinder
     visited_poss.concat(new_poss)
     new_poss
   end
+
+  def find_path(end_pos)
+    end_node = starting_pos.dfs(end_pos)
+    self.class.trace_path_back(end_node)
+  end
+
+  def self.trace_path_back(end_node)
+    path = []
+    current_node = end_node
+    until current_node.nil?
+      path.unshift(current_node.value)
+      current_node = current_node.parent
+    end
+    path
+  end
+
+  # def dfs(target_value)
+  #   return self if value == target_value
+  #   children.each do |child|
+  #     child_search_result = child.dfs(target_value)
+  #     return child_search_result if child_search_result
+  #   end
+  #
+  #   nil
+  # end
+
 end
 
 # Basic testing
@@ -48,3 +74,5 @@ end
 kpf = KnightPathFinder.new([0, 0])
 
 kpf.build_move_tree
+
+p kpf.find_path([6,2])
